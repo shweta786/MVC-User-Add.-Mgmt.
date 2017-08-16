@@ -283,7 +283,7 @@
 
         </style>
     </head>
-    
+
     <body style="background-color: #ebebeb">
         <section class="container">
             <div class="half bg" style="height:30%"></div>
@@ -340,7 +340,8 @@
                             <label for="email">email-id</label>
                             <input type="text" name="dob" id="dob" class="inpt" required="required" oninvalid="setCustomValidity('Please Enter Valid Date(mm/dd/yyyy)')"
                                    onchange="try {
-                                               setCustomValidity('')} catch (e) {
+                                               setCustomValidity('')
+                                           } catch (e) {
                                            }" placeholder="Date Of Birth" onfocus="(this.type = 'date')">                                                              
                             <select class="inpt" name="gender" id="gender" required="required" style="border: 1px solid lightgray;color:gray; width: 540px; height: 40px">
                                 <option value="" disabled selected>Gender</option>
@@ -350,7 +351,8 @@
                             </select><br><br>
                             <input id="phone" name="phone" type="tel" pattern="[0-9]{10}" oninvalid="setCustomValidity('Enter valid mobile number of 10 digits')"
                                    onchange="try {
-                                               setCustomValidity('')} catch (e) {
+                                               setCustomValidity('')
+                                           } catch (e) {
                                            }" placeholder="Mobile Number(9087550089)" class="inpt">
                             <input type="password" name="pass" id="pass" class="inpt" required="required" placeholder="Set Password">
                             <label for="password">create password</label>
